@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homeland Ventures</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    img {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .email {
+      font-size: 18px;
+      color: #002855;
+    }
+  </style>
+</head>
+<body>
+  <img src="Homeland_Ventures_Logo3-no BG.png" alt="Homeland Ventures Logo" />
+  <div class="email">Contact: <a href="mailto:info@homelandvc.com">info@homelandvc.com</a></div>
+</body>
+</html>
