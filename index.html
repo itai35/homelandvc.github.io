@@ -5,71 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Homeland</title>
 
-  <!-- Inter font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Favicon -->
   <link rel="icon" href="favicon.png" type="image/png">
 
   <style>
+    :root{
+      --bg:#F4F3EE;
+      --primary:#1f2526;
+      --secondary:#4a4f50;
+    }
+
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      background-color: #F4F3EE;
-      font-family: 'Inter', sans-serif;
-      color: #1f2526;
+      background: var(--bg);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--primary);
     }
 
-    .page {
+    .wrap{
       min-height: 100%;
       display: flex;
       flex-direction: column;
+    }
+
+    .hero{
+      flex: 1;
+      display: grid;
+      place-items: center;
+      padding: 56px 24px 72px;
+    }
+
+    .hero-inner{
+      display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
       text-align: center;
+      transform: translateY(-18px);
     }
 
-    .logo {
-      max-width: 420px;
-      width: 80%;
+    .logo{
+      width: min(620px, 86vw);
       height: auto;
+      display: block;
     }
 
-    .subtitle {
-      margin-top: 18px;
-      font-size: 20px;
-      font-weight: 600; /* SemiBold */
-      color: #1f2526;
+    /* 🔧 Tweaks applied here */
+    .subtitle{
+      margin-top: 22px;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--primary);
       letter-spacing: 0.2px;
+      opacity: 0.85;
     }
 
-    footer {
-      position: absolute;
-      bottom: 28px;
+    footer{
+      padding: 18px 24px 22px;
+      text-align: center;
       font-size: 13px;
       font-weight: 400;
-      color: #4a4f50;
+      color: var(--secondary);
     }
 
-    footer a {
-      color: #4a4f50;
+    footer a{
+      color: var(--secondary);
       text-decoration: none;
+    }
+
+    footer a:hover{
+      text-decoration: underline;
     }
   </style>
 </head>
-<body>
-  <div class="page">
-    <img
-      src="Homeland_new_logo_no_bg.png"
-      alt="Homeland"
-      class="logo"
-    />
-    <div class="subtitle">Civil Defense Platform</div>
-  </div>
 
-  <footer>
-    <a href="mailto:itai@homelandvc.com">itai@homelandvc.com</a>
-  </footer>
+<body>
+  <div class="wrap">
+    <main class="hero">
+      <div class="hero-inner">
+        <img class="logo" src="Homeland_new_logo_no_bg.png" alt="Homeland" />
+        <div class="subtitle">Civil Defense Platform</div>
+      </div>
+    </main>
+
+    <footer>
+      <a href="mailto:itai@homelandvc.com">itai@homelandvc.com</a>
+    </footer>
+  </div>
 </body>
 </html>
